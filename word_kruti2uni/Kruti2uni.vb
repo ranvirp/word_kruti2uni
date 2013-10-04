@@ -42,7 +42,7 @@ Public Class Kruti2uni
 
 
         'print implode(",",this->array_one); 
-        array_one = New String() {"Q+Z", "sas", "aa", ")Z", "ZZ", "‘", "’", """", """", _
+        array_one = New String() {"Q+Z", "sas", "aa", ")Z", "ZZ", "ss", "‘k", "’k", _
      "å", "ƒ", "„", "…", "†", "‡", "ˆ", "‰", "Š", "‹", _
      "¶+", "d+", "[+k", "[+", "x+", "T+", "t+", "M+", "<+", "Q+", ";+", "j+", "u+",
      "Ùk", "Ù", "ä", "–", "—", "é", "™", "=kk", "f=k", _
@@ -62,7 +62,7 @@ Public Class Kruti2uni
      "a", "¡", "%", "W", "•", "·", "∙", "·", "~j", "~", "\\", "+", " ः", _
      "^", "*", "Þ", "ß", "(", "¼", "½", "¿", "À", "¾", "A", "-", "&", "&", "Œ", "]", "~ ", "@"}
 
-        array_two = New String() {"QZ+", "sa", "a", "र्द्ध", "Z", """", """", "'", "'", "०", "१", "२", "३", "४", "५", "६", "७", "८", "९", _
+        array_two = New String() {"QZ+", "sa", "a", "र्द्ध", "Z", "ss", "ष", "ष", "०", "१", "२", "३", "४", "५", "६", "७", "८", "९", _
 "फ़्", "क़", "ख़", "ख़्", "ग़", "ज़्", "ज़", "ड़", "ढ़", "फ़", "य़", "ऱ", "ऩ", "त्त", "त्त्", "क्त", "दृ", "कृ", "न्न", "न्न्", "=k", "f=", _
 "ह्न", "ह्य", "हृ", "ह्म", "ह्र", "ह्", "द्द", "क्ष", "क्ष्", "त्र", "त्र्", _
 "छ्य", "ट्य", "ठ्य", "ड्य", "ढ्य", "द्य", "ज्ञ", "द्व", _
@@ -83,7 +83,16 @@ Public Class Kruti2uni
     End Sub
     Private Function Replace_Symbols(ByVal modified_substring As String) As [String]
         'substitute array_two elements in place of corresponding array_one elements
-
+        modified_substring = modified_substring.Replace("±", "Zं")
+        modified_substring = modified_substring.Replace("" + Chr(147) + "k", "श")
+        modified_substring = modified_substring.Replace("" + Chr(148) + "k", "श")
+        modified_substring = modified_substring.Replace("" + Chr(147), "श्")
+        modified_substring = modified_substring.Replace("" + Chr(148), "श्")
+        modified_substring = modified_substring.Replace("" + Chr(145) + "k", "ष")
+        modified_substring = modified_substring.Replace("" + Chr(146) + "k", "ष")
+        modified_substring = modified_substring.Replace("" + Chr(145), "ष्")
+        modified_substring = modified_substring.Replace("" + Chr(146), "ष्")
+        modified_substring = modified_substring.Replace("kW", "ॉ")
         If modified_substring <> "" Then
             ' if stringto be converted is non-blank then no need of any processing.
             For input_symbol_idx As Integer = 0 To array_one.Length - 1
@@ -110,7 +119,7 @@ Public Class Kruti2uni
             ' end of for loop
             ' alert(" end of for loop")
             ' alert(" modified substring2 = "+modified_substring)
-            modified_substring = modified_substring.Replace("±", "Zं")
+           
             ' at some places  ì  is  used eg  in "कर्कंधु,पूर्णांक".
             '
             '**********************************************************************************

@@ -10,3 +10,14 @@ C:\Users\lenovo\Documents\Visual Studio 2010\Projects\word_kruti2uni\word_kruti2
 C:\Users\lenovo\Documents\Visual Studio 2010\Projects\word_kruti2uni\word_kruti2uni\bin\Debug\word_kruti2uni.exe
 C:\Users\lenovo\Documents\Visual Studio 2010\Projects\word_kruti2uni\word_kruti2uni\obj\x86\Debug\Resources.resources
 C:\Users\lenovo\Documents\Visual Studio 2010\Projects\word_kruti2uni\word_kruti2uni\obj\x86\Debug\word_kruti2uni.exe
+D:\word_kruti2uni\word_kruti2uni\obj\x86\Debug\word_kruti2uni.vbproj.ResolveComReference.cache
+D:\word_kruti2uni\word_kruti2uni\obj\x86\Debug\word_kruti2uni.exe
+D:\word_kruti2uni\word_kruti2uni\obj\x86\Debug\word_kruti2uni.xml
+D:\word_kruti2uni\word_kruti2uni\obj\x86\Debug\word_kruti2uni.pdb
+D:\word_kruti2uni\word_kruti2uni\bin\Debug\itextsharp.dll
+D:\word_kruti2uni\word_kruti2uni\bin\Debug\word_kruti2uni.exe
+D:\word_kruti2uni\word_kruti2uni\bin\Debug\word_kruti2uni.pdb
+D:\word_kruti2uni\word_kruti2uni\bin\Debug\word_kruti2uni.xml
+D:\word_kruti2uni\word_kruti2uni\obj\x86\Debug\word_kruti2uni.vbprojResolveAssemblyReference.cache
+D:\word_kruti2uni\word_kruti2uni\obj\x86\Debug\Resources.resources
+D:\word_kruti2uni\word_kruti2uni\obj\x86\Debug\word_kruti2uni.vbproj.GenerateResource.Cache

@@ -10,11 +10,11 @@ Module Module1
         Dim kr As Kruti2uni
         kr = New Kruti2uni()
         Dim out As String
-        out = kr.converter("ch0ih0,y0 jk'ku dkMZ")
+        out = kr.converter(" fo'ks""k")
         'Console.OutputEncoding = Text.Encoding.Unicode
-        PdfWaterMark.AddPDFWatermark("d:/dtest1.pdf", "d:/test_watermark.pdf", "d:/watermarkimages.jpg")
+        '   PdfWaterMark.AddPDFWatermark("C:\Users\acer\Desktop\GO\VIJAY.pdf", "C:\Users\acer\Desktop\GO\VIJAY_watermark.pdf", "d:/watermarkimages.jpg")
         Dim fs As FileStream
-        fs = New FileStream("d:/dtest1.pdf", FileMode.Open)
+        fs = New FileStream("C:\Users\acer\Desktop\GO\VIJAY.pdf", FileMode.Open)
         out = PdfExtractText.getText(fs)
         out = kr.converter(out)
         Console.WriteLine(out)
